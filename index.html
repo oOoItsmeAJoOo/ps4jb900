@@ -60,6 +60,7 @@ if (req.readyState == 4){ //Improvement.
     <button class="button" onMouseOver="msgs.innerHTML='Ftp v1.3 - Original Version By xVortex / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.3'" onclick="load_ftp(); return false">Ftp</button>
     <button class="button" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.3'" onclick="load_historyblocker(); return false">History-Blocker</button>
     <button class="button" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.3'" onclick="load_kerneldumper(); return false">Kernel-Dumper</button>
+    <button class="button" onMouseOver="msgs.innerHTML='Game-Dumper - v1.8.2'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.3'" onclick="load_gamedumper(); return false">Game-Dumper</button>
     <br><br>
     <div style=font-size:16px>PAYLOADS SECTION 2</div>
     <button class="button" onMouseOver="msgs.innerHTML='PSN Account Offline Web Activator - By Sleirsgoevy'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.3'" onclick="load_webactivator(); return false">Web-Offline-Activator</button>
@@ -320,6 +321,14 @@ PLfile = "pl_kerneldumper.bin";
 exec_type = "payload";
 toogle_payload();
 }
+
+function load_gamedumper(){
+  msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Game-Dumper. Please wait 20-30 seconds!!!</h1>";
+  LoadedMSG="Game-Dumper Loaded";
+  PLfile = "pl_game-dumper-v1.8.2.bin";
+  exec_type = "payload";
+  toogle_payload();
+  }
 
 function load_moduledumper(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Kernel Module-Dumper. Please wait 20-30 seconds!!!</h1>";
